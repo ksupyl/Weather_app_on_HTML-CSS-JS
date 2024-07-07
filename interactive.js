@@ -29,7 +29,7 @@ let map;
 
         function getWeather() {
             const city = document.getElementById('cityInput').value;
-            const apiKey = 'Your APIkey'; // enter your APIKey from api.openweathermap.org
+            const apiKey = ${{secrets.YOUR_API_WEATHER}}; // enter your APIKey from api.openweathermap.org
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&lang=en&appid=${apiKey}`;
 
             fetch(url)
